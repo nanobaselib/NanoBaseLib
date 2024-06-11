@@ -9,3 +9,21 @@ NanoBaseLib contains five modules: `dataprep`, `base_calling`, `ploya_detection`
 `nanobaseLib dataprep combine_segpore_eventalign`
 
 `nanobaseLib dataprep extract_tombo_resquiggle`
+
+### base_calling
+
+`nanobaseLib base_calling generate_dna_dataset`
+
+`nanobaseLib base_calling generate_rna_dataset`
+
+`nanobaseLib base_calling evaluation`
+
+
+### ploya_detection
+
+
+
+### segment_align
+
+
+### rna_mod_detection

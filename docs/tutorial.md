@@ -52,3 +52,11 @@ Output:
 #### base_calling_dataloader
 
 #### base_calling_evaluation
+
+### 3. polya_detection
+
+### 4. segment_align
+
+### 5. rna_mod_detection
+
+

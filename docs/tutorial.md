@@ -94,6 +94,14 @@ Output: The average accuracy of matches ($M$), mismatches ($X$), insertions ($I$
 
 ### 3. polya_detection
 
+#### polya_detection_dataloader
+
 ### 4. segment_align
+
+#### nanopolish_evaluation
+
+#### tombo_evaluation
+
+#### segpore_evaluation
 
 

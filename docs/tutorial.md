@@ -1,6 +1,8 @@
-### NanoBaseLib Tutorials
+## NanoBaseLib Tutorials
 
 ### 1. dataprep
+
+#### combine_nanopolish_eventalign
 
 `python dataprep/combine_nanopolish_eventalign.py --input_file eventalign.txt`
 

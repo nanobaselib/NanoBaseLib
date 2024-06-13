@@ -8,7 +8,7 @@
 
 Input:
 
-| parameter         | Description |
+| Parameter         | Description |
 | -----------       | ----------- |
 | --input_file      | Input eventalign filepath, the output from nanopolish eventalign.  |
 | --output_suffix   | Output combined eventalign filename suffix        |
@@ -22,3 +22,23 @@ Output:
 | -----------              | ----------- |
 | eventalign_combined.txt  | The combined eventalign file. |
 | eventalign.index         | The index file for original eventalign file.    |
+
+
+#### extract_tombo_resquiggle
+
+`python dataprep/extract_tombo_resquiggle.py`
+
+Input:
+
+| Parameter         | Description |
+| -----------       | ----------- |
+| --root_dir        | The root dir of tombo resquiggle resluts. |
+| --folder          | The folder of  tombo resquiggle resluts. Default: "0".      |
+
+
+Output:
+
+| File                     | Description |
+| -----------              | ----------- |
+| tombo_resquiggle.txt     | Tombo resquiggle resluts. |
+| tombo_summary.txt        | The arrtibutes of tombo resquiggle resluts.   |

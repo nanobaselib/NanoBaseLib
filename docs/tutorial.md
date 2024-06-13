@@ -45,11 +45,41 @@ Output:
 
 ### 2. base_calling
 
-#### generate_dna_dataset
+#### generate_dna_dataset / generate_rna_dataset
 
-#### generate_rna_dataset
+Input:
+
+| Parameter         | Description |
+| -----------       | ----------- |
+| --input_file      |  Input combined eventalign filepath.  |
+| --reference_file  |  Genome reference_file. |
+| --fast5_folder    |  Orignal fast5 folder. |
+| --save_folder     |  Save fast5 folder. |
+
+Output:
+
+| File                     | Description |
+| -----------              | ----------- |
+| Generated fast5 files.   | Generated fast5 files saved in `--save_folder`, which correspond with the ground truth sequence.  |
+| label.csv                | The the ground truth sequence file.    |
 
 #### base_calling_dataloader
+
+Input:
+
+| Parameter         | Description |
+| -----------       | ----------- |
+| --fast5_folder    | Input fast5 folder.  |
+| --label_file      | Ground turth (label) file for each reads. Default: "label.csv". |
+
+Output:
+
+| File                     | Description |
+| -----------              | ----------- |
+| seg_data_arr.npy         |  Current signals.           |
+| seg_len_arr.npy          | The length of current signals. |
+| base_len_arr.npy         | Ground turth sequence. |
+| base_seq_arr.npy         | The length of ground turth sequence.    |
 
 #### base_calling_evaluation
 

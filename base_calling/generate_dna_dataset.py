@@ -344,12 +344,6 @@ def get_reads_num(fast5):
 
 
 if __name__ == '__main__':
-    """
-    Generate index file for eventalign and combine it.
-       Input file:   ../path/to/eventalign/eventalign.txt
-       Output file:  ../path/to/eventalign/eventalign.index
-                     ../path/to/eventalign/eventalign_combined.txt
-    """
     warnings.filterwarnings("ignore")
     eventalign_header = ["contig", "position", "reference_kmer", "read_index", "strand", "event_index",
                          "event_level_mean", "event_stdv", "event_length", "model_kmer", "model_mean", "model_stdv",
@@ -365,17 +359,17 @@ if __name__ == '__main__':
     args.combine_file = args.input_file.replace(".txt", "") + "_combined.txt"
     args.reads_file = args.input_file.replace(".txt", "") + "_reads.txt"
 
-    # # step 1: generate sample reads info
-    # index_start = time.time()
-    # parallel_generate(args.combine_file, args.reads_file, args.n_processes, args.chunk_size,
-    #                   args.min_seq_len, args.max_seq_len, args.shift)
-    # index_end = time.time()
-    # index_run = np.around((index_end - index_start) / 3600, 3)
-    # print(f"Generate read info done! Running time {index_run} hours.")
-    #
-    # # step 2: generate read name and fast5 info
-    # selected_reads_num = generate_full_reads_info(args.reads_file, args.summary_file)
-    # print(f"Generate read full info done! Finally select {selected_reads_num} reads.")
+    # step 1: generate sample reads info
+    index_start = time.time()
+    parallel_generate(args.combine_file, args.reads_file, args.n_processes, args.chunk_size,
+                      args.min_seq_len, args.max_seq_len, args.shift)
+    index_end = time.time()
+    index_run = np.around((index_end - index_start) / 3600, 3)
+    print(f"Generate read info done! Running time {index_run} hours.")
+    
+    # step 2: generate read name and fast5 info
+    selected_reads_num = generate_full_reads_info(args.reads_file, args.summary_file)
+    print(f"Generate read full info done! Finally select {selected_reads_num} reads.")
 
     # step 3: generate base calling input and output
     generate_fast5(args.reference_file, args.reads_file, args.fast5_folder, args.save_folder)

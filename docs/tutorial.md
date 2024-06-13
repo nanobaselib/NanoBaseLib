@@ -83,6 +83,15 @@ Output:
 
 #### base_calling_evaluation
 
+Input:
+
+| Parameter         | Description |
+| -----------       | ----------- |
+| --fast5_folder    | Input fast5 folder.  |
+| --label_file      | Ground turth (label) file for each reads. Default: "label.csv". |
+
+Output: The average accuracy of matches ($M$), mismatches ($X$), insertions ($I$), and deletions ($D$).
+
 ### 3. polya_detection
 
 ### 4. segment_align

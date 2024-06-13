@@ -5,4 +5,4 @@ NanoBaseLib contains five modules: `dataprep`, `base_calling`, `ploya_detection`
 
 #### [Tutorials](docs/tutorial.md)
 
-#### [Benchmarks](docs/benchmark.md)
+% #### [Benchmarks](docs/benchmark.md)

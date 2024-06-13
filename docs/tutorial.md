@@ -57,6 +57,4 @@ Output:
 
 ### 4. segment_align
 
-### 5. rna_mod_detection
-
 

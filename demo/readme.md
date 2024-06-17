@@ -30,5 +30,9 @@ demo_dataset
 single_to_multi_fast5 --input_path demo_dataset/1_raw_signal/single_fast5 --save_path demo_dataset/1_raw_signal/multi_fast5 --filename_base demo --batch_size 4000 --recursive; 
 ```
 
+```
+pod5 convert fast5 demo_dataset/1_raw_signal/multi_fast5/*.fast5 --output demo_dataset/1_raw_signal/multi_pod5/ --one-to-one demo_dataset/1_raw_signal/multi_fast5
+```
+
 
 ## NanoBaseLib Software Package

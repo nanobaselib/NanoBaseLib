@@ -24,6 +24,11 @@ demo_dataset
 ```
 ## Preprocessing Pipeline
 
+```
+cd demo_dataset
+# download the reference (ref.fa) to 0_reference
+```
+
 ### step 1: Data Standardization
 
 If the format of raw data is single-fast5, convert it into multi-fast5.

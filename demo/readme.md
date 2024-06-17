@@ -26,6 +26,7 @@ demo_dataset
 
 ### step 1: Data standardization
 
+If the format of raw data is single-fast5, convert it into multi-fast5.
 ```
 single_to_multi_fast5 --input_path demo_dataset/1_raw_signal/single_fast5 --save_path demo_dataset/1_raw_signal/multi_fast5 --filename_base demo --batch_size 4000 --recursive; 
 ```

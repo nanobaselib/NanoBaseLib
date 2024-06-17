@@ -5,6 +5,7 @@
 demo_dataset
     | -- 0_reference
     | -- 1_raw_signal
+            | -- single_fast5
             | -- multi_fast5
             | -- multi_pod5
     | -- 2_base_called
@@ -22,9 +23,10 @@ demo_dataset
 ```
 ## Preprocessing Pipeline
 
-### step 1: Base calling
+### step 1: Data standardization
 
 ```
+single_to_multi_fast5 --input_path demo_dataset/1_raw_signal/single_fast5 --save_path demo_dataset/1_raw_signal/multi_fast5 --filename_base demo --batch_size 4000 --recursive; 
 ```
 
 

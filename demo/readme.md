@@ -24,16 +24,16 @@ demo_dataset
 ```
 ## Preprocessing Pipeline
 
-### step 1: Data standardization
+### step 1: Data Standardization
 
 If the format of raw data is single-fast5, convert it into multi-fast5.
 ```
 single_to_multi_fast5 --input_path demo_dataset/1_raw_signal/single_fast5 --save_path demo_dataset/1_raw_signal/multi_fast5 --filename_base demo --batch_size 4000 --recursive; 
 ```
-
+If Dorado base caller is needed, convert multi-fast5 to pod5.
 ```
 pod5 convert fast5 demo_dataset/1_raw_signal/multi_fast5/*.fast5 --output demo_dataset/1_raw_signal/multi_pod5/ --one-to-one demo_dataset/1_raw_signal/multi_fast5
 ```
-
+### step 2: Base Calling
 
 ## NanoBaseLib Software Package

@@ -4,6 +4,7 @@
 ```
 demo_dataset
     | -- 0_reference
+            | -- ref.fa
     | -- 1_raw_signal
             | -- single_fast5
             | -- multi_fast5

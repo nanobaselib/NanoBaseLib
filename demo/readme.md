@@ -27,6 +27,7 @@ demo_dataset
 ```
 cd demo_dataset
 # download the reference (ref.fa) to 0_reference
+# download the raw signal to 1_raw_signal
 ```
 
 ### step 1: Data Standardization

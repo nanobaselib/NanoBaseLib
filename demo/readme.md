@@ -43,7 +43,7 @@ pod5 convert fast5 1_raw_signal/multi_fast5/*.fast5 --output 1_raw_signal/multi_
 ### Step 2: Base Calling
 
 ```
-/guppy_basecaller -c rna_r9.4.1_70bps_hac.cfg --num_callers 20 --cpu_threads_per_caller 20 -i 1_raw_signal/multi_fast5 -s 2_base_called/guppy  --fast5_out
+guppy_basecaller -c rna_r9.4.1_70bps_hac.cfg --num_callers 20 --cpu_threads_per_caller 20 -i 1_raw_signal/multi_fast5 -s 2_base_called/guppy  --fast5_out
 ```
 
 ## NanoBaseLib Software Package

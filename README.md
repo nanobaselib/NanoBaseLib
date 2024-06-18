@@ -54,17 +54,19 @@ single_to_multi_fast5 --input_path 1_raw_signal/single_fast5 --save_path 1_raw_s
 ```
 If Dorado base caller is needed, convert multi-fast5 to pod5.
 ```
-pod5 convert fast5 1_raw_signal/multi_fast5/*.fast5 --output 1_raw_signal/multi_pod5/ --one-to-one 1_raw_signal/multi_fast5
+pod5 convert fast5 1_raw_signal/multi_fast5/*.fast5 --output 1_raw_signal/multi_pod5 \
+                   --one-to-one 1_raw_signal/multi_fast5
 ```
 ### Step 2: Base Calling
 
 ```
-guppy_basecaller -c rna_r9.4.1_70bps_hac.cfg --num_callers 20 --cpu_threads_per_caller 20 -i 1_raw_signal/multi_fast5 \
-                 -s 2_base_called/guppy  --fast5_out
+guppy_basecaller -c rna_r9.4.1_70bps_hac.cfg --num_callers 20 --cpu_threads_per_caller 20 \
+                 -i 1_raw_signal/multi_fast5 -s 2_base_called/guppy  --fast5_out
 ```
 
 ```
-dorado basecaller rna002_70bps_hac@v3 1_raw_signal/multi_pod5 --estimate-poly-a > 2_base_called/dorado/dorado.bam 
+dorado basecaller rna002_70bps_hac@v3 1_raw_signal/multi_pod5 \
+                  --estimate-poly-a > 2_base_called/dorado/dorado.bam 
 ```
 
 ### Step 3: Mapping

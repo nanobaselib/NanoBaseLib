@@ -59,7 +59,8 @@ pod5 convert fast5 1_raw_signal/multi_fast5/*.fast5 --output 1_raw_signal/multi_
 ### Step 2: Base Calling
 
 ```
-guppy_basecaller -c rna_r9.4.1_70bps_hac.cfg --num_callers 20 --cpu_threads_per_caller 20 -i 1_raw_signal/multi_fast5 -s 2_base_called/guppy  --fast5_out
+guppy_basecaller -c rna_r9.4.1_70bps_hac.cfg --num_callers 20 --cpu_threads_per_caller 20 -i 1_raw_signal/multi_fast5 \
+                 -s 2_base_called/guppy  --fast5_out
 ```
 
 ```
@@ -86,7 +87,8 @@ samtools view -h -o reads-ref.sorted.filter.sam reads-ref.sorted.filter.bam
 ### Step 4: PolyA Detection
 
 ```
-nanopolish polya --threads=32 --reads=demo_dataset.fastq --bam=reads-ref.sorted.filter.bam --genome=../0_reference/ref.fa > ../4_nanopolish/polya.tsv
+nanopolish polya --threads=32 --reads=demo_dataset.fastq --bam=reads-ref.sorted.filter.bam \
+                 --genome=../0_reference/ref.fa > ../4_nanopolish/polya.tsv
 grep -E 'PASS|readname' ../4_nanopolish/polya.tsv > ../4_nanopolish/polya-pass-only-with-head.tsv
 ```
 

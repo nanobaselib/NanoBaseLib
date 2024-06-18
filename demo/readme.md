@@ -107,5 +107,7 @@ mkdir 5_tombo/single_reads
 for i in `ls 2_base_called/guppy/workspace`; do multi_to_single_fast5 --input_path 2_base_called/guppy/workspace/${i}  --save_path 5_tombo/single_reads --recursive -t 20; done
 tombo resquiggle 5_tombo/single_reads 0_reference/ref.fa --overwrite --processes 20
 ```
+![image](https://github.com/nanobaselib/NanoBaseLib/assets/166529164/de974327-21fd-4fb4-b85e-2e7d819381a8)
+
 
 ## NanoBaseLib Software Package

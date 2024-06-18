@@ -75,5 +75,13 @@ samtools view -h -o reads-ref.sorted.filter.sam reads-ref.sorted.filter.bam
 
 ### Step 4: PolyA Detection
 
+```
+library(tailfindr)
+df <- find_tails(fast5_dir = '2_base_called/guppy/workspace',
+                 save_dir = '3_tailfindr',
+                 csv_filename = 'tails.csv',
+                 num_cores = 20)
+```
+
 
 ## NanoBaseLib Software Package

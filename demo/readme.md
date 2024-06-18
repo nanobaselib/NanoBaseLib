@@ -105,7 +105,7 @@ nanopolish eventalign --reads demo_dataset.fastq \
 cd ..
 mkdir 5_tombo/single_reads
 for i in `ls 2_base_called/guppy/workspace`; do multi_to_single_fast5 --input_path 2_base_called/guppy/workspace/${i}  --save_path 5_tombo/single_reads --recursive -t 20; done
-tombo resquiggle 5_tombo/single_reads /0_reference/ref.fa --overwrite --processes 20
+tombo resquiggle 5_tombo/single_reads 0_reference/ref.fa --overwrite --processes 20
 ```
 
 ## NanoBaseLib Software Package

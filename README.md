@@ -49,7 +49,8 @@ cd demo_dataset
 
 If the format of raw data is single-fast5, convert it into multi-fast5.
 ```
-single_to_multi_fast5 --input_path 1_raw_signal/single_fast5 --save_path 1_raw_signal/multi_fast5 --filename_base demo --batch_size 4000 --recursive; 
+single_to_multi_fast5 --input_path 1_raw_signal/single_fast5 --save_path 1_raw_signal/multi_fast5 \
+                      --filename_base demo --batch_size 4000 --recursive; 
 ```
 If Dorado base caller is needed, convert multi-fast5 to pod5.
 ```

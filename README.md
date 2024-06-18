@@ -122,5 +122,7 @@ tombo resquiggle 5_tombo/single_reads 0_reference/ref.fa --overwrite --processes
 ![image](https://github.com/nanobaselib/NanoBaseLib/assets/166529164/de974327-21fd-4fb4-b85e-2e7d819381a8)
 
 
-## NanoBaseLib Software Package
+## NanoBaseLib Commands
+
+### combine_nanopolish_eventalign
 

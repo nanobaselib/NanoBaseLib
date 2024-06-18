@@ -19,7 +19,7 @@ demo_dataset
             | -- demo_dataset.fastq
             | -- reads-ref.sorted.filter.bam
     | -- 3_tailfindr
-            | -- tailfindr_pass.csv
+            | -- tails.csv
     | -- 4_nanopolish
             | -- eventalign_combined.txt
             | -- polya-pass-only-with-head.tsv

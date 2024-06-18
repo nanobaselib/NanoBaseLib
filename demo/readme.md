@@ -71,10 +71,13 @@ samtools view -b -F 2324 reads-ref.sorted.bam > reads-ref.sorted.filter.bam
 samtools index reads-ref.sorted.filter.bam
 samtools quickcheck reads-ref.sorted.filter.bam
 samtools view -h -o reads-ref.sorted.filter.sam reads-ref.sorted.filter.bam
-cd ..
 ```
 
 ### Step 4: PolyA Detection
+
+```
+nanopolish polya --threads=32 --reads=demo_dataset.fastq --bam=reads-ref.sorted.filter.bam --genome=../0_reference/ref.fa > ../4_nanopolish/polya.tsv
+```
 
 ```
 library(tailfindr)
@@ -83,6 +86,7 @@ df <- find_tails(fast5_dir = '2_base_called/guppy/workspace',
                  csv_filename = 'tails.csv',
                  num_cores = 20)
 ```
+
 
 
 ## NanoBaseLib Software Package

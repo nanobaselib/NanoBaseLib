@@ -90,6 +90,16 @@ df <- find_tails(fast5_dir = '2_base_called/guppy/workspace',
                  num_cores = 20)
 ```
 
+### Step 5: Segmentation and Event Alignmnet
+```
+nanopolish eventalign --reads demo_dataset.fastq \
+--bam reads-ref.sorted.filter.bam \
+--genome ../0_reference/ref.fa \
+--signal-index \
+--scale-events \
+--summary ../4_nanopolish/summary.txt \
+--threads 32 > ../4_nanopolish/eventalign.txt
+```
 
 
 ## NanoBaseLib Software Package

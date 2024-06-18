@@ -21,7 +21,9 @@ demo_dataset
     | -- 3_tailfindr
             | -- tails.csv
     | -- 4_nanopolish
+            | -- eventalign.txt
             | -- eventalign_combined.txt
+            | -- polya.tsv
             | -- polya-pass-only-with-head.tsv
     | -- 5_tombo
             | -- tombo_resquiggle.txt
@@ -77,6 +79,7 @@ samtools view -h -o reads-ref.sorted.filter.sam reads-ref.sorted.filter.bam
 
 ```
 nanopolish polya --threads=32 --reads=demo_dataset.fastq --bam=reads-ref.sorted.filter.bam --genome=../0_reference/ref.fa > ../4_nanopolish/polya.tsv
+grep -E 'PASS|readname' ../4_nanopolish/polya.tsv > ../4_nanopolish/polya-pass-only-with-head.tsv
 ```
 
 ```

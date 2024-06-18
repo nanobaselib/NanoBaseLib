@@ -71,6 +71,7 @@ samtools view -b -F 2324 reads-ref.sorted.bam > reads-ref.sorted.filter.bam
 samtools index reads-ref.sorted.filter.bam
 samtools quickcheck reads-ref.sorted.filter.bam
 samtools view -h -o reads-ref.sorted.filter.sam reads-ref.sorted.filter.bam
+cd ..
 ```
 
 ### Step 4: PolyA Detection

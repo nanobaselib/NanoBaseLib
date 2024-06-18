@@ -16,6 +16,8 @@ demo_dataset
                     | -- fail
                     | -- pass
                     | -- workspace
+            | -- demo_dataset.fastq
+            | -- reads-ref.sorted.filter.bam
     | -- 3_tailfindr
             | -- tailfindr_pass.csv
     | -- 4_nanopolish
@@ -53,5 +55,25 @@ guppy_basecaller -c rna_r9.4.1_70bps_hac.cfg --num_callers 20 --cpu_threads_per_
 ```
 dorado basecaller rna002_70bps_hac@v3 1_raw_signal/multi_pod5 --estimate-poly-a > 2_base_called/dorado/dorado.bam 
 ```
+
+### Step 3: Mapping
+
+```
+cd 2_base_called
+find guppy -type f -name "*.fastq" -exec cat {} + > demo_dataset.fastq
+nanopolish index --directory=../1_raw_signal/multi_fast5 demo_dataset.fastq
+minimap2 -ax map-ont --MD -t 8 --secondary=no ../0_reference/ref.fa demo_dataset.fastq | samtools sort -o reads-ref.sorted.bam -T reads.tmp
+```
+![image](https://github.com/nanobaselib/NanoBaseLib/assets/166529164/c92a60fb-8fa7-47de-8456-fe119c020d42)
+
+```
+samtools view -b -F 2324 reads-ref.sorted.bam > reads-ref.sorted.filter.bam
+samtools index reads-ref.sorted.filter.bam
+samtools quickcheck reads-ref.sorted.filter.bam
+samtools view -h -o reads-ref.sorted.filter.sam reads-ref.sorted.filter.bam
+```
+
+### Step 4: PolyA Detection
+
 
 ## NanoBaseLib Software Package

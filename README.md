@@ -11,6 +11,9 @@ NanoBaseLib contains five modules: `dataprep`, `base_calling`, `ploya_detection`
 ## Demo Dataset
 ```
 NanoBaseLib
+    | -- base_calling
+    | -- dataprep
+    | -- ... 
     | -- demo_dataset
         | -- 0_reference
                 | -- ref.fa

@@ -294,14 +294,11 @@ def read_res_acc(file_name, strand=None):
 
 def arg_parser():
     parser = ArgumentParser(formatter_class=ArgumentDefaultsHelpFormatter, add_help=False)
-    parser.add_argument('--root_dir',
-                        help='input eventalign filepath, the output from nanopolish.',
-                        default='/scratch/cs/infantbiome/chengg1/datasets/hek293t_bc_benchmark')
+    parser.add_argument('--root_dir', default='bc_benchmark')
     parser.add_argument('--base_type', default='dna')
-
     parser.add_argument('--model', default=None)
-    parser.add_argument('--plot', default=False)
     parser.add_argument('--strand', default=None)
+    parser.add_argument('--print', default=False)
     return parser
 
 
@@ -333,22 +330,10 @@ if __name__ == '__main__':
         elif args.model == "causalcall":
             process_guppy(args.root_dir, gt_df, args.model)
 
-    if args.plot:
+    if args.print:
         for model in baselines:
             model_res = os.path.join(args.root_dir, "output", model, "accuracy.csv")
             if os.path.exists(model_res):
                 res = read_res_acc(model_res, args.strand)
                 res = [str(i) for i in res]
                 print(model.capitalize(), '&', ' & '.join(res), '\\\\')
-
-
-
-
-
-
-
-
-
-
-
-

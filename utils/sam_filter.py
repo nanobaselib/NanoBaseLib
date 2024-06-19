@@ -50,7 +50,7 @@ def filter_sam(sam_file, keep_file_name):
 if __name__ == '__main__':
 
     parser = argparse.ArgumentParser(description='.')
-    parser.add_argument('--root-dir', type=str, default='/scratch/cs/nanopore/chengg1/benchmark_datasets')
+    parser.add_argument('--root-dir', type=str, default='benchmark_datasets')
     parser.add_argument('--dataset', type=str, default='ecoli_eligos')
     parser.add_argument('--sample', type=str, default='IVT_m5C')
     args = parser.parse_args()

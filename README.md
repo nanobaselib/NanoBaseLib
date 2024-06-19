@@ -38,7 +38,12 @@ NanoBaseLib
                 | -- single_reads
                         | -- tombo_resquiggle.txt
                         | -- tombo_summary.txt
-        | -- 6_segpore        
+        | -- 6_segpore
+    | -- demo_dataset_base_calling
+        | -- fast5
+        | -- input
+        | -- label
+        | -- output   
 ```
 ## Preprocessing Pipeline
 

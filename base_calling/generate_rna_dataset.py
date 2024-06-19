@@ -342,20 +342,15 @@ def arg_parser():
     return parser
 
 
-def get_reads_num(fast5):
-    i = 0
-    with h5py.File(fast5, 'r') as fast5_data:
-        for read_key in fast5_data:
-            i += 1
-    return i
-
-
 if __name__ == '__main__':
     """
-    Generate index file for eventalign and combine it.
-       Input file:   ../path/to/eventalign/eventalign.txt
-       Output file:  ../path/to/eventalign/eventalign.index
-                     ../path/to/eventalign/eventalign_combined.txt
+    Generate benchmark dataset for RNA base calling.
+       Input file:   --input_file ../path/to/nanopolish/eventalign.txt
+                     --summary_file ../path/to/nanopolish/summary.txt
+                     --reference_file ../path/to/reference/ref.fa
+                     --fast5_folder ../path/to/raw_signal/multi_fast5
+                     --save_folder ../path/to/base_calling_benchmark
+                     
     """
     warnings.filterwarnings("ignore")
     eventalign_header = ["contig", "position", "reference_kmer", "read_index", "strand", "event_index",

@@ -335,15 +335,10 @@ def arg_parser():
     return parser
 
 
-def get_reads_num(fast5):
-    i = 0
-    with h5py.File(fast5, 'r') as fast5_data:
-        for read_key in fast5_data:
-            i += 1
-    return i
-
-
 if __name__ == '__main__':
+    """
+    Generate benchmark dataset for DNA base calling.
+    """
     warnings.filterwarnings("ignore")
     eventalign_header = ["contig", "position", "reference_kmer", "read_index", "strand", "event_index",
                          "event_level_mean", "event_stdv", "event_length", "model_kmer", "model_mean", "model_stdv",

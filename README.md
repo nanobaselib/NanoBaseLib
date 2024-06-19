@@ -140,7 +140,7 @@ python dataprep/extract_tombo_resquiggle.py --root_dir demo_dataset/5_tombo/sing
 ### generate_rna_dataset
 ```
 mkdir demo_dataset_base_calling
-python generate_rna_dataset.py \
+python base_calling/generate_rna_dataset.py \
 --input_file demo_dataset/4_nanopolish/eventalign.txt \
 --summary_file demo_dataset/4_nanopolish/summary.txt \
 --reference_file demo_dataset/0_reference/ref.fa \
@@ -148,3 +148,8 @@ python generate_rna_dataset.py \
 --save_folder demo_dataset_base_calling
 ```
 ![image](https://github.com/nanobaselib/NanoBaseLib/assets/166529164/134e290c-8318-47d3-b995-6805ada5abd8)
+
+### base_calling_dataloader
+```
+python base_calling/base_calling_dataloader.py --root_dir demo_dataset_base_calling
+```

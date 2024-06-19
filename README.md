@@ -2,11 +2,9 @@
 <div align="center">
     <img src=docs/logo_small.svg width=60% />
 </div>
-
 <p align="center">
  <a href="https://nanobaselib.github.io" style="font-weight: bold;">NanoBaseLib Website</a> |  <a href="docs/tutorial.md" style="font-weight: bold;">NanoBaseLib Tutorials</a> |  <a href="https://nanobaselib.github.io" style="font-weight: bold;">Download Demo Dataset</a>
 </p>
-
 
 NanoBaseLib contains five modules: `dataprep`, `base_calling`, `ploya_detection`, `segment_align`, and `rna_mod_detection`. The `dataprep` module processes the output of different tools into the same format. The other four modules are designed to benchmark different tasks.
 

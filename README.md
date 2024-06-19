@@ -2,6 +2,9 @@
 <div align="center">
     <img src=docs/logo_small.svg width=60% />
 </div>
+<p style="text-align: center;">
+  <a href="https://example.com" style="font-weight: bold;">点击这里访问示例网站</a>
+</p>
 <p style="text-align: center;">[NanoBaseLib Website](https://nanobaselib.github.io/) | [NanoBaseLib Tutorials](docs/tutorial.md) | [Download Demo Dataset]()</p>
 
 

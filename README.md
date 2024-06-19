@@ -4,7 +4,7 @@
 </div>
 
 <p align="center">
- <a href="https://example.com" style="font-weight: bold;">点击这里访问示例网站</a>
+ <a href="https://nanobaselib.github.io" style="font-weight: bold;">NanoBaseLib Website</a>
 </p>
 
 

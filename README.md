@@ -127,6 +127,7 @@ tombo resquiggle 5_tombo/single_reads 0_reference/ref.fa --overwrite --processes
 
 ### combine_nanopolish_eventalign
 ```
-python dataprep/combine_nanopolish_eventalign.py --input_file 4_nanopolish/eventalign.txt --base_type rna --n_processes 10
+python dataprep/combine_nanopolish_eventalign.py --input_file 4_nanopolish/eventalign.txt  \
+                                                 --base_type rna --n_processes 10
 ```
 

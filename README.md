@@ -34,8 +34,9 @@ demo_dataset
             | -- polya.tsv
             | -- polya-pass-only-with-head.tsv
     | -- 5_tombo
-            | -- tombo_resquiggle.txt
-            | -- tombo_summary.txt
+            | -- single_reads
+                    | -- tombo_resquiggle.txt
+                    | -- tombo_summary.txt
     | -- 6_segpore        
 ```
 ## Preprocessing Pipeline

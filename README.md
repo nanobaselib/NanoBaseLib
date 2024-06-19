@@ -10,41 +10,42 @@ NanoBaseLib contains five modules: `dataprep`, `base_calling`, `ploya_detection`
 
 ## Demo Dataset
 ```
-demo_dataset
-    | -- 0_reference
-            | -- ref.fa
-    | -- 1_raw_signal
-            | -- single_fast5
-            | -- multi_fast5
-            | -- multi_pod5
-    | -- 2_base_called
-            | -- dorado
-                    | -- dorado.bam
-            | -- guppy
-                    | -- fail
-                    | -- pass
-                    | -- workspace
-            | -- demo_dataset.fastq
-            | -- reads-ref.sorted.filter.bam
-    | -- 3_tailfindr
-            | -- tails.csv
-    | -- 4_nanopolish
-            | -- eventalign.txt
-            | -- eventalign_combined.txt
-            | -- polya.tsv
-            | -- polya-pass-only-with-head.tsv
-    | -- 5_tombo
-            | -- single_reads
-                    | -- tombo_resquiggle.txt
-                    | -- tombo_summary.txt
-    | -- 6_segpore        
+NanoBaseLib
+    | -- demo_dataset
+        | -- 0_reference
+                | -- ref.fa
+        | -- 1_raw_signal
+                | -- single_fast5
+                | -- multi_fast5
+                | -- multi_pod5
+        | -- 2_base_called
+                | -- dorado
+                        | -- dorado.bam
+                | -- guppy
+                        | -- fail
+                        | -- pass
+                        | -- workspace
+                | -- demo_dataset.fastq
+                | -- reads-ref.sorted.filter.bam
+        | -- 3_tailfindr
+                | -- tails.csv
+        | -- 4_nanopolish
+                | -- eventalign.txt
+                | -- eventalign_combined.txt
+                | -- polya.tsv
+                | -- polya-pass-only-with-head.tsv
+        | -- 5_tombo
+                | -- single_reads
+                        | -- tombo_resquiggle.txt
+                        | -- tombo_summary.txt
+        | -- 6_segpore        
 ```
 ## Preprocessing Pipeline
 
 ```
-cd demo_dataset
-# download the reference (ref.fa) to 0_reference
-# download the raw signal to 1_raw_signal
+git clone https://github.com/nanobaselib/NanoBaseLib.git
+cd NanoBaseLib
+# download demo dataset
 ```
 
 ### Step 1: Data Standardization

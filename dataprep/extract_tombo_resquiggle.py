@@ -28,12 +28,12 @@ def extract_reads(fast5_folder, resquiggle_file, summary_file):
             GenomeCorrected_object = fast5_data['Analyses']['RawGenomeCorrected_000']
             keys = [i for i in GenomeCorrected_object]
             if keys != ['BaseCalled_template']:
-                print(f"{read_name} tombo resquiggle fails.")
+                print(f"{read_name} tombo resquiggle failed!")
                 continue
             events_object = GenomeCorrected_object['BaseCalled_template']
             keys = [i for i in events_object]
             if keys != ['Alignment', 'Events']:
-                print(f"{read_name} tombo resquiggle fails.")
+                print(f"{read_name} tombo resquiggle failed!")
                 continue
 
             # read all attrs

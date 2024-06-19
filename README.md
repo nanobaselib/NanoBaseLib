@@ -4,7 +4,7 @@
 </div>
 
 <p align="center">
- <a href="https://nanobaselib.github.io" style="font-weight: bold;">NanoBaseLib Website</a> |  <a href="https://nanobaselib.github.io" style="font-weight: bold;">NanoBaseLib Website</a>
+ <a href="https://nanobaselib.github.io" style="font-weight: bold;">NanoBaseLib Website</a> |  <a href="docs/tutorial.md" style="font-weight: bold;">NanoBaseLib Tutorials</a> |  <a href="https://nanobaselib.github.io" style="font-weight: bold;">Download Demo Dataset</a>
 </p>
 
 

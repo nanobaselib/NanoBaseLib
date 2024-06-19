@@ -54,8 +54,7 @@ NanoBaseLib
 git clone https://github.com/nanobaselib/NanoBaseLib.git
 cd NanoBaseLib
 ```
-Download the [clean demo dataset](https://drive.usercontent.google.com/download?id=1Y6e60u1M_fd_MSTmbTtOFNhgJI1xRZ8S&export=download&authuser=0), unzip and put it under NanoBaseLib folder.
-
+Download the [clean demo dataset](https://drive.usercontent.google.com/download?id=1Y6e60u1M_fd_MSTmbTtOFNhgJI1xRZ8S&export=download&authuser=0), unzip it, and place it in the NanoBaseLib folder. Your directory structure should look like the example above.
 
 ### Step 1: Data Standardization
 

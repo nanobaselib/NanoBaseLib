@@ -165,3 +165,4 @@ python base_calling/generate_rna_dataset.py \
 ```
 python base_calling/base_calling_dataloader.py --root_dir demo_dataset_base_calling
 ```
+You can use the `Dataloader` to develop a new model for base calling and evaluate its performance using the [base_calling_evaluation.py](base_calling/base_calling_evaluation.py) script.

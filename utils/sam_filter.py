@@ -1,12 +1,3 @@
-# -*- coding: UTF-8 -*-
-"""
-@Project : cuda_check_after_bonito 
-@File    : mimimap2_test.py
-@Author  : Guangzhao Cheng
-@Date    : 2022/11/22 15:37 
-@Github  : 
-"""
-
 import csv
 import os
 import argparse

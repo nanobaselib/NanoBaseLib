@@ -8,7 +8,6 @@ import h5py
 
 
 def rm_exist_file(file_name):
-
     if os.path.exists(file_name):
         os.remove(file_name)
 
@@ -77,10 +76,8 @@ def extract_reads(fast5_folder, resquiggle_file, summary_file):
 
 def arg_parser():
     parser = ArgumentParser(formatter_class=ArgumentDefaultsHelpFormatter, add_help=False)
-    parser.add_argument('--root_dir',
-                        default='/scratch/cs/nanopore/chengg1/benchmark_datasets/lambda_phage/3_tombo/VER5940')
-    parser.add_argument('--folder',
-                        default='0')
+    parser.add_argument('--root_dir', default='demo_dataset/5_tombo/single_reads')
+    parser.add_argument('--folder', default='0')
     return parser
 
 

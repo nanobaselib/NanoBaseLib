@@ -146,6 +146,4 @@ python generate_rna_dataset.py \
 --fast5_folder demo_dataset/1_raw_signal/multi_fast5 \
 --save_folder demo_dataset_base_calling
 ```
-![image](https://github.com/nanobaselib/NanoBaseLib/assets/166529164/ab151bfe-a42e-4363-acc3-0fb64cd1484e)
-
-
+![image](https://github.com/nanobaselib/NanoBaseLib/assets/166529164/134e290c-8318-47d3-b995-6805ada5abd8)

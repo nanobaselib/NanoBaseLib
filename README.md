@@ -131,4 +131,9 @@ tombo resquiggle 5_tombo/single_reads 0_reference/ref.fa --overwrite --processes
 python dataprep/combine_nanopolish_eventalign.py --input_file 4_nanopolish/eventalign.txt  \
                                                  --base_type rna --n_processes 10
 ```
+### extract_tombo_resquiggle
+```
+python dataprep/extract_tombo_resquiggle.py --root_dir 5_tombo/single_reads --folder 0
+```
+
 

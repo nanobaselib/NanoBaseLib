@@ -136,4 +136,16 @@ python dataprep/combine_nanopolish_eventalign.py --input_file 4_nanopolish/event
 python dataprep/extract_tombo_resquiggle.py --root_dir 5_tombo/single_reads --folder 0
 ```
 
+### generate_rna_dataset
+```
+mkdir demo_dataset_base_calling
+python generate_rna_dataset.py \
+--input_file demo_dataset/4_nanopolish/eventalign.txt \
+--summary_file demo_dataset/4_nanopolish/summary.txt \
+--reference_file demo_dataset/0_reference/ref.fa \
+--fast5_folder demo_dataset/1_raw_signal/multi_fast5 \
+--save_folder demo_dataset_base_calling
+```
+![image](https://github.com/nanobaselib/NanoBaseLib/assets/166529164/ab151bfe-a42e-4363-acc3-0fb64cd1484e)
+
 

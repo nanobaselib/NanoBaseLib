@@ -1,7 +1,3 @@
-# -*- coding: utf-8 -*-
-# @Time    : 2021/12/28 15:34
-# @Author  : Guangzhao Cheng
-# @FileName: combine_eventalign.py
 import os
 import csv
 import numpy as np

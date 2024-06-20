@@ -9,43 +9,43 @@
 ## Demo Dataset
 
 ```
-NanoBaseLib
-    | -- base_calling
-    | -- dataprep
-    | -- ... 
-    | -- demo_dataset
-        | -- 0_reference
-                | -- ref.fa
-        | -- 1_raw_signal
-                | -- single_fast5
-                | -- multi_fast5
-                | -- multi_pod5
-        | -- 2_base_called
-                | -- dorado
-                        | -- dorado.bam
-                | -- guppy
-                        | -- fail
-                        | -- pass
-                        | -- workspace
-                | -- demo_dataset.fastq
-                | -- reads-ref.sorted.filter.bam
-        | -- 3_tailfindr
-                | -- tails.csv
-        | -- 4_nanopolish
-                | -- eventalign.txt
-                | -- eventalign_combined.txt
-                | -- polya.tsv
-                | -- polya-pass-only-with-head.tsv
-        | -- 5_tombo
-                | -- single_reads
-                        | -- tombo_resquiggle.txt
-                        | -- tombo_summary.txt
-        | -- 6_segpore
-    | -- demo_dataset_base_calling
-        | -- fast5
-        | -- input
-        | -- label
-        | -- output   
+NanoBaseLib/
+    ├── base_calling/
+    ├── dataprep/
+    ├──  ... 
+    ├── demo_dataset/
+    │    ├── 0_reference/
+    │    │        └── ref.fa
+    │    ├── 1_raw_signal/
+    │    │        ├── single_fast5/
+    │    │        ├── multi_fast5/
+    │    │        └── multi_pod5/
+    │    ├── 2_base_called/
+    │    │        ├── dorado/
+    │    │        │     └── dorado.bam
+    │    │        ├── guppy/
+    │    │        │     ├── fail/
+    │    │        │     ├── pass/
+    │    │        │     └── workspace/
+    │    │        ├── demo_dataset.fastq
+    │    │        └── reads-ref.sorted.filter.bam
+    │    ├── 3_tailfindr/
+    │    │        └──  tails.csv
+    │    ├── 4_nanopolish/
+    │    │        ├── eventalign.txt
+    │    │        ├── eventalign_combined.txt
+    │    │        ├── polya.tsv
+    │    │        └── polya-pass-only-with-head.tsv
+    │    ├── 5_tombo/
+    │    │        └── single_reads/
+    │    │                ├── tombo_resquiggle.txt
+    │    │                └── tombo_summary.txt
+    │    └── 6_segpore/
+    └── demo_dataset_base_calling/
+        ├──  fast5/
+        ├──  input/
+        ├──  label/
+        └──  output/  
 ```
 ## Preprocessing Pipeline
 

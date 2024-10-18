@@ -3,7 +3,7 @@
     <img src=docs/logo_small.svg width=60% />
 </div>
 <p align="center" ">
- <a href="https://nanobaselib.github.io"> Website</a> | <a href=""> Paper (Coming Soon)  </a> | <a href="docs/tutorial.md"> Tutorials</a> |  <a href="https://drive.usercontent.google.com/download?id=1CQ_KkR4_HeTGjhr-zcHznhpUUcUEx1PL&export=download"> Demo </a>
+ <a href="https://nanobaselib.github.io"> Website</a> | <a href=""> Paper (Coming Soon)  </a> | <a href="https://neurips.cc/virtual/2024/poster/97859"> Poster </a> | <a href="docs/tutorial.md"> Tutorials</a> |  <a href="https://zenodo.org/records/10889896/files/demo_dataset_processed.tar.gz?download=1"> Demo </a>
 </p>
 
 ## Demo Dataset
@@ -53,7 +53,7 @@ NanoBaseLib/
 git clone https://github.com/nanobaselib/NanoBaseLib.git
 cd NanoBaseLib
 ```
-Download the [clean demo dataset](https://drive.usercontent.google.com/download?id=1Y6e60u1M_fd_MSTmbTtOFNhgJI1xRZ8S&export=download&authuser=0), unzip it, and place it in the NanoBaseLib folder. Your directory structure should look like the example above.
+Download the [clean demo dataset](https://zenodo.org/records/10889896/files/demo_dataset.tar.gz?download=1), unzip it, and place it in the NanoBaseLib folder. Your directory structure should look like the example above.
 
 ### Step 1: Data Standardization
 

@@ -8,6 +8,7 @@
 
 ## Demo Dataset
 
+The <a href="https://zenodo.org/records/10889896/files/demo_dataset_processed.tar.gz?download=1">processed demo dataset</a> (1.1G) can be downloaded from <a href="https://zenodo.org/records/10889896">Zenodo</a>.
 ```
 NanoBaseLib/
     ├── base_calling/

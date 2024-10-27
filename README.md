@@ -8,7 +8,7 @@
 
 ## Demo Dataset
 
-The <a href="https://zenodo.org/records/10889896/files/demo_dataset_processed.tar.gz?download=1">processed demo dataset</a> (1.1G) can be downloaded from <a href="https://zenodo.org/records/10889896">Zenodo</a>.
+The <a href="https://zenodo.org/records/10889896/files/demo_dataset_processed.tar.gz?download=1">processed demo dataset</a> (1.1GB) can be downloaded from <a href="https://zenodo.org/records/10889896">Zenodo</a>.
 ```
 NanoBaseLib/
     ├── base_calling/
@@ -54,7 +54,7 @@ NanoBaseLib/
 git clone https://github.com/nanobaselib/NanoBaseLib.git
 cd NanoBaseLib
 ```
-Download the [clean demo dataset](https://zenodo.org/records/10889896/files/demo_dataset.tar.gz?download=1), unzip it, and place it in the NanoBaseLib folder. Your directory structure should look like the example above.
+Download the [clean demo dataset](https://zenodo.org/records/10889896/files/demo_dataset.tar.gz?download=1) (319.1 MB), unzip it, and place it in the NanoBaseLib folder. Your directory structure should look like the example above.
 
 ### Step 1: Data Standardization
 

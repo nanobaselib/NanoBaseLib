@@ -3,7 +3,7 @@
     <img src=docs/logo_small.svg width=60% />
 </div>
 <p align="center" ">
- <a href="https://nanobaselib.github.io"> Website</a> | <a href=""> Paper (Coming Soon)  </a> | <a href="https://neurips.cc/virtual/2024/poster/97859"> Poster </a> | <a href="docs/tutorial.md"> Tutorials</a> |  <a href="https://zenodo.org/records/10889896/files/demo_dataset_processed.tar.gz?download=1"> Demo </a>
+ <a href="https://nanobaselib.github.io"> Website</a> | <a href=""> Paper (Coming Soon)  </a> | <a href="https://neurips.cc/virtual/2024/poster/97859"> Poster </a> | <a href="docs/tutorial.md"> Tutorials</a> 
 </p>
 
 ## Demo Dataset

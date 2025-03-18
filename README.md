@@ -3,7 +3,7 @@
     <img src=docs/logo_small.svg width=60% />
 </div>
 <p align="center" ">
- <a href="https://nanobaselib.github.io">Website</a> | <a href='https://papers.nips.cc/paper_files/paper/2024/hash/8bce223b376f52fb86a148097eebb10d-Abstract-Datasets_and_Benchmarks_Track.html'>Paper</a> | <a href="https://openreview.net/forum?id=3ZjaXTPWiE#discussion">Openreview</a> | <a href="https://neurips.cc/virtual/2024/poster/97859"> Poster </a> | <a href="docs/tutorial.md">Tutorials</a> 
+ <a href="https://nanobaselib.github.io">Website</a> | <a href='https://papers.nips.cc/paper_files/paper/2024/hash/8bce223b376f52fb86a148097eebb10d-Abstract-Datasets_and_Benchmarks_Track.html'>Paper</a> | <a href="https://openreview.net/forum?id=3ZjaXTPWiE#discussion">Openreview</a> | <a href="docs/tutorial.md">Tutorials</a> 
 </p>
 
 ## Demo Dataset

@@ -170,15 +170,12 @@ You can use the `Dataloader` to develop a new model for base calling and evaluat
 
 ## Citation
 ```
-@inproceedings{NEURIPS2024_8bce223b,
- author = {Cheng, Guangzhao and Fu, Chengbo and Cheng, Lu},
- booktitle = {Advances in Neural Information Processing Systems},
- editor = {A. Globerson and L. Mackey and D. Belgrave and A. Fan and U. Paquet and J. Tomczak and C. Zhang},
- pages = {76319--76331},
- publisher = {Curran Associates, Inc.},
- title = {NanoBaseLib: A Multi-Task Benchmark Dataset for Nanopore Sequencing},
- url = {https://proceedings.neurips.cc/paper_files/paper/2024/file/8bce223b376f52fb86a148097eebb10d-Paper-Datasets_and_Benchmarks_Track.pdf},
- volume = {37},
- year = {2024}
+@article{cheng2024nanobaselib,
+  title={NanoBaseLib: A Multi-Task Benchmark Dataset for Nanopore Sequencing},
+  author={Cheng, Guangzhao and Fu, Chengbo and Cheng, Lu},
+  journal={Advances in Neural Information Processing Systems},
+  volume={37},
+  pages={76319--76331},
+  year={2024}
 }
 ```
